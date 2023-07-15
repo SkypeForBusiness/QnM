@@ -1,0 +1,1 @@
+[{"name": "Test", "gold": 0, "hp": 20, "items": [], "gear": [], "skills": [], "spells": [], "stats": {}}, {"name": "Ragnar", "gold": 0, "hp": 20, "items": [], "gear": [], "skills": ["Smash"], "spells": ["Berserk"], "stats": {"dex": "10", "int": "0", "str": "10", "wil": "0", "wis": "10", "cha": "0"}}]

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h1>Character Creation</h1>
+    
+    <form action="#" method="POST">
+        <label for="char_name">Character Name</label>
+        <input type="text" name="char_name" id="char_name" required>
+        <br><br>
+        
+        <h2>Stats:</h2>
+        <table>
+            <tr>
+                <th>DEX</th>
+                <th>INT</th>
+                <th>STR</th>
+                <th>WIL</th>
+                <th>WIS</th>
+                <th>CHA</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="dex" id="dex" required></td>
+                <td><input type="number" name="int" id="int" required></td>
+                <td><input type="number" name="str" id="str" required></td>
+                <td><input type="number" name="wil" id="wil" required></td>
+                <td><input type="number" name="wis" id="wis" required></td>
+                <td><input type="number" name="cha" id="cha" required></td>
+            </tr>
+        </table>
+        <br><br>
+        
+        <h2>Skills:</h2>
+        <p>Skill 1</p>
+        <label for="skill1_name">Name</label>
+        <input type="text" name="skill1_name" id="skill1_name" required>
+        <br>
+        <label for="skill1_effect">Effect</label>
+        <textarea name="skill1_effect" id="skill1_effect" rows="6" cols="40" required></textarea>
+        <br>
+        <label for="skill1_damage">Damage</label>
+        <input type="number" name="skill1_damage" id="skill1_damage" required>
+        <br><br>
+
+        <h2>Spells:</h2>
+        <p>Spell 1</p>
+        <label for="spell1_name">Name</label>
+        <input type="text" name="spell1_name" id="spell1_name" required>
+        <br>
+        <label for="spell1_effect">Effect</label>
+        <textarea name="spell1_effect" id="spell1_effect" rows="6" cols="40" required></textarea>
+        <br>
+        <label for="spell1_damage">Damage</label>
+        <input type="number" name="spell1_damage" id="spell1_damage" required>
+        <br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

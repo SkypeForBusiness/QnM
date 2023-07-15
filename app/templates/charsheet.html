@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h1>{{char_name}}</h1>
+    <br>
+    <p>Gold: {{gold}}</p>
+    <br>
+    <p>HP: {{hp}}</p>
+    <br>
+
+    <h2>Stats:</h2>
+        <table>
+            <tr>
+                <th>DEX</th>
+                <th>INT</th>
+                <th>STR</th>
+                <th>WIL</th>
+                <th>WIS</th>
+                <th>CHA</th>
+            </tr>
+            <tr>
+                <td>{{stats['dex']}}</td>
+                <td>{{stats['int']}}</td>
+                <td>{{stats['str']}}</td>
+                <td>{{stats['wil']}}</td>
+                <td>{{stats['wis']}}</td>
+                <td>{{stats['cha']}}</td>
+            </tr>
+        </table>
+        <br><br>
+
+    <h2>Skills</h2>
+    {% for sk in skills %}
+        <p>{{sk}}</p>
+    {% endfor %}
+    <br>
+
+    <h2>Spells</h2>
+    {% for sp in spells %}
+        <p>{{sp}}</p>
+    {% endfor %}
+    <br>
+
+    <h2>Gear</h2>
+    {% for g in gear %}
+        <p>{{g}}</p>
+    {% endfor %}
+
+{% endblock %}
